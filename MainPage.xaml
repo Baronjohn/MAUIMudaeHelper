@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage" BackgroundColor="#323232" IconImageSource="kakeraw.png">
+
+    <Grid RowDefinitions="*, 12*, *" ColumnDefinitions="2*, 3*">
+        <Image VerticalOptions="Start" HorizontalOptions="Start" Margin="10,-25,0,0" HeightRequest="22" WidthRequest="11" Source="kakeraw.png"/>
+        <Label Text="Mudaehelper" Margin="30,-25,0,0"></Label>
+
+        <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Subtitle" FontAttributes="Bold">Automation</Label>
+
+        <Label Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Subtitle" FontAttributes="Bold">Splitter</Label>
+
+        <Grid Grid.Row="1" RowDefinitions="4*, 4*, 4*" ColumnDefinitions="5*, 4*">
+
+            <RadioButton Grid.Row="0" VerticalOptions="Start" Margin="18,0,0,0" Content="ma" FontSize="13"></RadioButton>
+            <RadioButton Grid.Row="0" VerticalOptions="Start" Margin="18,55,0,0" Content="ha" FontSize="13"></RadioButton>
+            <RadioButton Grid.Row="0" VerticalOptions="Start" Margin="18,110,0,0" Content="wa" FontSize="13"></RadioButton>
+
+            <RadioButton Grid.Row="0" VerticalOptions="Start" Margin="78,0,0,0" Content="mg" FontSize="13"></RadioButton>
+            <RadioButton Grid.Row="0" VerticalOptions="Start" Margin="78,55,0,0" Content="hg" FontSize="13"></RadioButton>
+            <RadioButton Grid.Row="0" VerticalOptions="Start" Margin="78,110,0,0" Content="wg" FontSize="13"></RadioButton>
+
+            <RadioButton Grid.Row="0" VerticalOptions="Start" Margin="138,0,0,0" Content="mg" FontSize="13"></RadioButton>
+            <RadioButton Grid.Row="0" VerticalOptions="Start" Margin="138,55,0,0" Content="hg" FontSize="13"></RadioButton>
+            <RadioButton Grid.Row="0" VerticalOptions="Start" Margin="138,110,0,0" Content="wg" FontSize="13"></RadioButton>
+
+            <CheckBox Grid.Row="1" VerticalOptions="Start" Margin="15,15,0,0"/>
+            <Image Grid.Row="1" VerticalOptions="Start" HorizontalOptions="Start" Margin="52,20,0,0" HeightRequest="22" WidthRequest="11" Source="kakerap.png"/>
+
+            <CheckBox Grid.Row="1" VerticalOptions="Start" Margin="15,62,0,0"/>
+            <Image Grid.Row="1" VerticalOptions="Start" HorizontalOptions="Start" Margin="52,67,0,0" HeightRequest="22" WidthRequest="11" Source="kakera.png"/>
+
+            <CheckBox Grid.Row="1" VerticalOptions="Start" Margin="15,110,0,0"/>
+            <Image Grid.Row="1" VerticalOptions="Start" HorizontalOptions="Start" Margin="52,115,0,0" HeightRequest="22" WidthRequest="11" Source="kakerat.png"/>
+
+            <CheckBox Grid.Row="1" VerticalOptions="Start" Margin="75,15,0,0"/>
+            <Image Grid.Row="1" VerticalOptions="Start" HorizontalOptions="Start" Margin="112,20,0,0" HeightRequest="22" WidthRequest="11" Source="kakerag.png"/>
+
+            <CheckBox Grid.Row="1" VerticalOptions="Start" Margin="75,62,0,0"/>
+            <Image Grid.Row="1" VerticalOptions="Start" HorizontalOptions="Start" Margin="112,67,0,0" HeightRequest="22" WidthRequest="11" Source="kakeray.png"/>
+
+            <CheckBox Grid.Row="1" VerticalOptions="Start" Margin="75,110,0,0"/>
+            <Image Grid.Row="1" VerticalOptions="Start" HorizontalOptions="Start" Margin="112,115,0,0" HeightRequest="22" WidthRequest="11" Source="kakerao.png"/>
+
+            <CheckBox Grid.Row="1" VerticalOptions="Start" Margin="135,15,0,0"/>
+            <Image Grid.Row="1" VerticalOptions="Start" HorizontalOptions="Start" Margin="172,20,0,0" HeightRequest="22" WidthRequest="11" Source="kakerar.png"/>
+
+            <CheckBox Grid.Row="1" VerticalOptions="Start" Margin="135,62,0,0"/>
+            <Image Grid.Row="1" VerticalOptions="Start" HorizontalOptions="Start" Margin="172,67,0,0" HeightRequest="22" WidthRequest="11" Source="kakeraw.png"/>
+
+            <CheckBox Grid.Row="1" VerticalOptions="Start" Margin="135,110,0,0"/>
+            <Image Grid.Row="1" VerticalOptions="Start" HorizontalOptions="Start" Margin="172,115,0,0" HeightRequest="22" WidthRequest="11" Source="kakeral.png"/>
+
+            <Grid Grid.Column="1" RowDefinitions="*, *, *, *" ColumnDefinitions="2*, *">
+                <Entry Grid.Row="0" Grid.Column="0" FontSize="13" VerticalOptions="Center" Margin="0,2,10,0" Placeholder="Hotkey Roll" />
+                <Entry Grid.Row="1" Grid.Column="0" FontSize="13" VerticalOptions="Center" Margin="0,2,10,0" Placeholder="Hotkey Pause" />
+                <Entry Grid.Row="2" Grid.Column="0" FontSize="13" VerticalOptions="Center" Margin="0,2,10,0" Placeholder="Current Rolls" />
+                <Entry Grid.Row="3" Grid.Column="0" FontSize="13" VerticalOptions="Center" Margin="0,2,10,0" Placeholder="Maximum Rolls" />
+
+                <Button Clicked="Roll_Button_Clicked" Grid.Row="0" Grid.Column="1" Text="Roll" FontSize="11" BackgroundColor="#166100" BorderColor="#000000" TextColor="White" Margin="0,3,5,3" BorderWidth="2"></Button>
+                <Button Grid.Row="1" Grid.Column="1" Text="Pause" FontSize="11" BackgroundColor="#610000" BorderColor="#000000" TextColor="White" Margin="0,3,5,3" BorderWidth="2"></Button>
+            </Grid>
+
+            
+            <CheckBox Grid.Row="1" Grid.Column="1" VerticalOptions="Start" Margin="-5,15,0,0"/>
+            <Label Grid.Row="1" Grid.Column="1" Text="Autoclaim Wish" FontSize="13" Margin="30,20,0,0"></Label>
+            
+            <CheckBox Grid.Row="1" Grid.Column="1" VerticalOptions="Start" Margin="-5,45,0,0"/>
+            <Label Grid.Row="1" Grid.Column="1" Text="Autoclaim Kakeravalue" FontSize="13" Margin="30,50,0,0"></Label>
+
+            <Button Grid.Row="1" Grid.Column="1" Text="Start Autoreactions" FontSize="11" BackgroundColor="#006161" BorderColor="#000000" TextColor="White" Margin="0,85,5,15" BorderWidth="2"></Button>
+
+            <Entry Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" IsReadOnly="True" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" BackgroundColor="#232323" Margin="20,0,5,0"></Entry>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="1" ColumnDefinitions="3*, 3*">
+            <Entry Grid.Column="0" Placeholder="Splitter Input" BackgroundColor="#232323" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" Margin="20,0,0,0"></Entry>
+            <Entry Grid.Column="2" Placeholder="Splitter Output" BackgroundColor="#232323" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" Margin="0,0,20,0"></Entry>
+        </Grid>
+
+        <Label Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="End" VerticalTextAlignment="Center" Padding="20" FontSize="Caption">© by Joons V 2.0.0</Label>
+    </Grid>
+
+</ContentPage>
